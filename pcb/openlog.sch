@@ -28,9 +28,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:ckd_sandwich
+LIBS:polystack
 LIBS:ti-gate
-LIBS:openlog-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -52,10 +51,10 @@ S 9300 2050 1200 3400
 U 564009DE
 F0 "ExpansionPort" 60
 F1 "ExpansionPort.sch" 60
-F2 "+5V" I L 9300 3800 60 
-F3 "GND" I R 10500 3800 60 
-F4 "UART1_TX" I L 9300 5300 60 
-F5 "UART1_RX" I L 9300 5400 60 
+F2 "+5V" I L 9300 3800 60
+F3 "GND" I R 10500 3800 60
+F4 "UART1_TX" I L 9300 5300 60
+F5 "UART1_RX" I L 9300 5400 60
 $EndSheet
 $Comp
 L CONN_01X06 CRADLE_PORT1
@@ -66,7 +65,7 @@ F 1 "CONN_01X06" V 5800 3950 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 5700 3950 50  0001 C CNN
 F 3 "" H 5700 3950 50  0000 C CNN
 	1    5700 3950
-	0    1    1    0   
+	0    1    1    0
 $EndComp
 $Comp
 L CONN_01X06 PROGRAM_PORT1
@@ -77,7 +76,7 @@ F 1 "CONN_01X06" V 5800 2650 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Angled_1x06" H 5700 2650 50  0001 C CNN
 F 3 "" H 5700 2650 50  0000 C CNN
 	1    5700 2650
-	0    -1   -1   0   
+	0    -1   -1   0
 $EndComp
 $Comp
 L C C1
@@ -88,7 +87,7 @@ F 1 "10uF" H 7225 3250 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206_HandSoldering" H 7238 3200 50  0001 C CNN
 F 3 "" H 7200 3350 50  0000 C CNN
 	1    7200 3350
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L GNDPWR #PWR01
@@ -99,7 +98,7 @@ F 1 "GNDPWR" H 6400 3570 50  0000 C CNN
 F 2 "" H 6400 3650 50  0000 C CNN
 F 3 "" H 6400 3650 50  0000 C CNN
 	1    6400 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6400 3500 6400 3700
@@ -126,7 +125,7 @@ F 1 "GNDPWR" H 5100 2870 50  0000 C CNN
 F 2 "" H 5100 2950 50  0000 C CNN
 F 3 "" H 5100 2950 50  0000 C CNN
 	1    5100 3000
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	5950 2850 5950 3200
@@ -143,7 +142,7 @@ F 1 "GNDPWR" H 7200 3570 50  0000 C CNN
 F 2 "" H 7200 3650 50  0000 C CNN
 F 3 "" H 7200 3650 50  0000 C CNN
 	1    7200 3700
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	7200 3500 7200 3700
@@ -156,7 +155,7 @@ F 1 "D_Schottky_x2_KCom_AAK" H 6600 2950 50  0000 C CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 6600 2850 50  0001 C CNN
 F 3 "" H 6600 2850 50  0000 C CNN
 	1    6600 2850
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	6600 3050 6600 3400
@@ -177,7 +176,7 @@ F 1 "+5V" H 6900 2690 50  0000 C CNN
 F 2 "" H 6900 2550 50  0000 C CNN
 F 3 "" H 6900 2550 50  0000 C CNN
 	1    6900 2550
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Text Label 6300 2550 1    60   ~ 0
 FTDI_PWR
@@ -204,7 +203,7 @@ F 1 "GNDPWR" H 10700 3670 50  0000 C CNN
 F 2 "" H 10700 3750 50  0000 C CNN
 F 3 "" H 10700 3750 50  0000 C CNN
 	1    10700 3800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 $Comp
 L +5V #PWR07
@@ -215,7 +214,7 @@ F 1 "+5V" H 9100 3940 50  0000 C CNN
 F 2 "" H 9100 3800 50  0000 C CNN
 F 3 "" H 9100 3800 50  0000 C CNN
 	1    9100 3800
-	1    0    0    -1  
+	1    0    0    -1
 $EndComp
 Wire Wire Line
 	10500 3800 10700 3800
